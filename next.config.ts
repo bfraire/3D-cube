@@ -1,7 +1,12 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: 'export',
+  images: {
+    unoptimized: true
+  },
+  basePath: '/3D-cube',
+  assetPrefix: '/3D-cube/',   // <-- Add this line
 };
 
-export default nextConfig;
+module.exports = nextConfig;
+
