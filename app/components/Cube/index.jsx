@@ -13,7 +13,7 @@ export default function Index() {
       <Canvas camera={{ position: [8, 8, 8] }}>
             <ambientLight intensity={1.2} />
             <directionalLight position={[2, 1, 1]} intensity={1.5} />
-            <OrbitControls enableZoom={false} />
+            <OrbitControls/>
             <Suspense fallback={null}>
             <Cube/>
         </Suspense>
